@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">html5easy</string>
+    <string name="app_name">HTML5  Easy</string>
+    <string name="a1">ca-app-pub-2895464231641597/3114130661</string>
+    <string name="a2">ca-app-pub-2895464231641597/4590863863</string>
+    <string name="a3">ca-app-pub-2895464231641597/6067597068</string>
+    <string name="a4">ca-app-pub-2895464231641597/7544330262</string>
+    <string name="a5">ca-app-pub-2895464231641597/9021063466</string>
+    <string name="a6">ca-app-pub-2895464231641597/1497796669</string>
+    <string name="a7">ca-app-pub-2895464231641597/2974529864</string>
+    <string name="a8">ca-app-pub-2895464231641597/4451263062</string>
+    <string name="a9">ca-app-pub-2895464231641597/5927996261</string>
+    <string name="a10">ca-app-pub-2895464231641597/7404729461</string>
+    <string name="a11">ca-app-pub-2895464231641597/8881462666</string>
 </resources>
