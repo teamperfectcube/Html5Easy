@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageView" type="id">false</item>
+    <item name="textView" type="id">false</item>
+    <item name="tablaView" type="id">false</item>
+    <item name="tableRow" type="id">false</item>
+    <item name="textView1" type="id">false</item>
+    <item name="webLayout" type="id">false</item>
+    <item name="list_view_main_activity" type="id">false</item>
+</resources>

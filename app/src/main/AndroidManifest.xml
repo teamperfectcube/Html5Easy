@@ -1,0 +1,124 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itsgaurav.html5easy">
+
+    <!--permission for internet-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--MainActivity -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--HTMLIntroductionActivity-->
+        <activity
+            android:name=".activities.HTMLIntroductionActivity"
+            android:label="@string/label_html5_introduction">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLElementsActivity-->
+        <activity
+            android:name=".activities.HTMLElementsActivity"
+            android:label="@string/label_html5_elements">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLVideoActivity -->
+        <activity
+            android:name=".activities.HTMLVideoActivity"
+            android:label="@string/label_html5_video">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLAudioActivity -->
+        <activity
+            android:name=".activities.HTMLAudioActivity"
+            android:label="@string/label_html5_audio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLDragAndDropActivity-->
+        <activity
+            android:name=".activities.HTMLDragAndDropActivity"
+            android:label="@string/label_html5_drag_and_drop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLCanvasActivity -->
+        <activity
+            android:name=".activities.HTMLCanvasActivity"
+            android:label="@string/label_html5_canvas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLSvgActivity -->
+        <activity
+            android:name=".activities.HTMLSvgActivity"
+            android:label="@string/label_html5_svg">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLGeoLocationActivity -->
+        <activity
+            android:name=".activities.HTMLGeoLocationActivity"
+            android:label="@string/label_html5_geolocation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLWebStorageActivity -->
+        <activity
+            android:name=".activities.HTMLWebStorageActivity"
+            android:label="@string/label_html_web_storage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLWebWorkersActivity -->
+        <activity
+            android:name=".activities.HTMLWebWorkersActivity"
+            android:label="@string/label_html5_web_workers">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+
+        <!--HTMLSseActivity -->
+        <activity
+            android:name=".activities.HTMLSseActivity"
+            android:label="@string/label_html5_sse">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BaseActivity" />
+        </activity>
+    </application>
+</manifest>

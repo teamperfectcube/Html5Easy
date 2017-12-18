@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Html5 Easy</string>
+
+    <!--Settings text-->
+    <string name="text_rate_us">Rate us</string>
+    <string name="text_other_app">Other App</string>
+
+    <!--Chapters label text-->
+    <string name="label_html5_introduction">HTML5 Introduction</string>
+    <string name="label_html5_elements">HTML5 Elements</string>
+    <string name="label_html5_video">HTML5 Video</string>
+    <string name="label_html5_audio">HTML5 Audio</string>
+    <string name="label_html5_drag_and_drop">HTML5 Drag and Drop</string>
+    <string name="label_html5_canvas">HTML5 Canvas</string>
+    <string name="label_html5_svg">HTML5 SVG</string>
+    <string name="label_html5_geolocation">HTML5 GoLocation</string>
+    <string name="label_html_web_storage">HTML5 Web Storage</string>
+    <string name="label_html5_web_workers">HTML5 Web Workers</string>
+    <string name="label_html5_sse">HTML5 SSE</string>
+
+    <!--Adds key-->
+    <string name="html5a1">ca-app-pub-2895464231641597/3114130661</string>
+    <string name="html5a2">ca-app-pub-2895464231641597/4590863863</string>
+    <string name="html5a3">ca-app-pub-2895464231641597/6067597068</string>
+    <string name="html5a4">ca-app-pub-2895464231641597/7544330262</string>
+    <string name="html5a5">ca-app-pub-2895464231641597/9021063466</string>
+    <string name="html5a6">ca-app-pub-2895464231641597/1497796669</string>
+    <string name="html5a7">ca-app-pub-2895464231641597/2974529864</string>
+    <string name="html5a8">ca-app-pub-2895464231641597/4451263062</string>
+    <string name="html5a9">ca-app-pub-2895464231641597/5927996261</string>
+    <string name="html5a10">ca-app-pub-2895464231641597/7404729461</string>
+    <string name="html5a11">ca-app-pub-2895464231641597/8881462666</string>
+</resources>

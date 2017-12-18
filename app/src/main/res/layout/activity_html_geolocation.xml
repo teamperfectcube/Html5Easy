@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/corner_bg">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView_html_geo_location"
+            android:layout_margin="10dp"
+            android:clipToPadding="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Locate the User's Position"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="The HTML5 Geolocation API is used to get the geographical position of a user."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Since this can compromise user privacy, the position is not available unless the user approves it."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/divider_line_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="HTML5 - Using Geolocation"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Use the getCurrentPosition() method to get the user's position."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="The example below is a simple Geolocation example returning the latitude and longitude of the user's position:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cell_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Example"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/divider_line_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="&lt;script> \nvar x=document.getElementById(&quot;demo&quot;); \nfunction getLocation() \n  { \n  if (navigator.geolocation) \n    { \n    navigator.geolocation.getCurrentPosition(showPosition); \n    } \n  else{x.innerHTML=&quot;Geolocation is not supported by this browser.&quot;;} \n  } \nfunction showPosition(position) \n  { \n  x.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +  \n  &quot;&lt;br />Longitude: &quot; + position.coords.longitude;  \n  } \n&lt;/script>"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/divider_line_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Handling Errors and Rejections"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="The second parameter of the getCurrentPosition() method is used to handle errors. It specifies a function to run if it fails to get the user's location:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cell_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Example"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/divider_line_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="function showError(error) \n  { \n  switch(error.code)  \n    { \n    case error.PERMISSION_DENIED: \n      x.innerHTML=&quot;User denied the request for Geolocation.&quot; \n      break; \n    case error.POSITION_UNAVAILABLE: \n      x.innerHTML=&quot;Location information is unavailable.&quot; \n      break; \n    case error.TIMEOUT: \n      x.innerHTML=&quot;The request to get user location timed out.&quot; \n      break; \n    case error.UNKNOWN_ERROR: \n      x.innerHTML=&quot;An unknown error occurred.&quot; \n      break; \n    } \n  }"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/divider_line_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Displaying the Result in a Map"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="To display the result in a map, you need access to a map service that can use latitude and longitude, like Google Maps: "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cell_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Example"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/divider_line_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="function showPosition(position) \n{ \nvar latlon=position.coords.latitude+&quot;,&quot;+position.coords.longitude;  \nvar img_url=&quot;http://maps.googleapis.com/maps/api/staticmap?center=&quot; \n+latlon+&quot;&amp;zoom=14&amp;size=400x300&amp;sensor=false&quot;;  \ndocument.getElementById(&quot;mapholder&quot;).innerHTML=&quot;&lt;img src='&quot;+img_url+&quot;' />&quot;; \n}"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/divider_line_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Location-specific Information"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="This page demonstrated how to show a user's position on a map. However, Geolocation is also very useful for location-specific information."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Examples:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/dot_image" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Up-to-date local information"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/dot_image" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Showing Points-of-interest near the user"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/dot_image" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Turn-by-turn navigation (GPS)"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/divider_line_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The getCurrentPosition() Method - Return Data"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="The getCurrentPosition() method returns an object if it is successful. The latitude, longitude and accuracy properties are always returned. The other properties below are returned if available."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@id/tablaView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="Property"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="Description"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="coords.latitude"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The latitude as a decimal number"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="coords.longitude"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The longitude as a decimal number"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="coords.accuracy"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The accuracy of position"
+                                android:textColor="#ff000000"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="coords.altitude"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The altitude in meters above the mean sea level"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="coords.altitudeAccuracy"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The altitude accuracy of position"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="coords.heading"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The heading as degrees clockwise from North"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="coords.speed"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The speed in meters per second"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@id/tableRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/cell_shape">
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center"
+                                android:text="timestamp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@id/textView1"
+                                android:layout_width="185dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cell_shape"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="4dp"
+                                android:text="The date/time of the response"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/divider_line_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Geolocation object - Other interesting Methods"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="watchPosition() - Returns the current position of the user and continues to return updated position as the user moves (like the GPS in a car)."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="clearWatch() - Stops the watchPosition() method."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="The example below shows the watchPosition() method. You need an accurate GPS device to test this (like iPhone):"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cell_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Example"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/divider_line_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="&lt;script> \nvar x=document.getElementById(&quot;demo&quot;); \nfunction getLocation() \n  { \n  if (navigator.geolocation) \n    { \n    navigator.geolocation.watchPosition(showPosition); \n    } \n  else{x.innerHTML=&quot;Geolocation is not supported by this browser.&quot;;} \n  } \nfunction showPosition(position) \n  { \n  x.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +  \n  &quot;&lt;br />Longitude: &quot; + position.coords.longitude;  \n  } \n&lt;/script>"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_html_geo_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/html5a5"></com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
