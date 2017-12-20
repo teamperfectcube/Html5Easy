@@ -505,7 +505,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="5dp"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/html5a1" />
+            ads:adUnitId="@string/html5_a1" />
 
     </RelativeLayout>
 

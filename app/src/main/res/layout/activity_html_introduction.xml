@@ -374,7 +374,7 @@
             android:layout_marginBottom="5dp"
             android:visibility="visible"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/html5a6"></com.google.android.gms.ads.AdView>
+            ads:adUnitId="@string/html5_a6"></com.google.android.gms.ads.AdView>
     </RelativeLayout>
 
 
