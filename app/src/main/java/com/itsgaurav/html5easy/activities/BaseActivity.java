@@ -106,7 +106,7 @@ public class BaseActivity extends AppCompatActivity {
      */
     private void openPrivacyPoicyPage() {
         Intent openURL = new Intent(android.content.Intent.ACTION_VIEW);
-        openURL.setData(Uri.parse("https://github.com/teamperfectcube/Html5Easy/blob/master/README.md"));
+        openURL.setData(Uri.parse("https://github.com/teamperfectcube/Html5Easy/blob/master/privacy_policy.md"));
         startActivity(openURL);
     }
 }
