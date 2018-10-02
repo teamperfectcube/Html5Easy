@@ -11,4 +11,9 @@
         app:showAsAction="never"
         android:id="@+id/action_other_app"
         android:title="@string/text_other_app" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/action_privacy_policy"
+        android:title="@string/text_privacy_policy" />
 </menu>

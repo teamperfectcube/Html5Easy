@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'myandroidkey'
+            keyPassword 'NOmore_24'
+            storeFile file('/Users/gaurav/Desktop/Android Apps/keystore.jks')
+            storePassword 'Nomore_24'
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.itsgaurav.html5easy"
@@ -12,25 +20,26 @@ android {
     }
     buildTypes {
         release {
+            useProguard true
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled true
-            shrinkResources true
+            useProguard false
+            minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //Support library dependencies
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
-
     //Testing dependencies
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

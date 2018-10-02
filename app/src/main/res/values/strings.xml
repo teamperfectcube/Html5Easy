@@ -4,6 +4,7 @@
     <!--Settings text-->
     <string name="text_rate_us">Rate us</string>
     <string name="text_other_app">Other App</string>
+    <string name="text_privacy_policy">Privacy Policy</string>
 
     <!--Chapters label text-->
     <string name="label_html5_introduction">HTML5 Introduction</string>

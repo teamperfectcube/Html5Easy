@@ -60,6 +60,9 @@ public class BaseActivity extends AppCompatActivity {
             case R.id.action_other_app:
                 openDeveloperPage();
                 return true;
+            case R.id.action_privacy_policy:
+                openPrivacyPoicyPage();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -96,5 +99,14 @@ public class BaseActivity extends AppCompatActivity {
             startActivity(new Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://play.google.com/store/apps/dev?id=" + developerID)));
         }
+    }
+
+    /**
+     * Method to redirect user to privacy policy page.
+     */
+    private void openPrivacyPoicyPage() {
+        Intent openURL = new Intent(android.content.Intent.ACTION_VIEW);
+        openURL.setData(Uri.parse("https://github.com/teamperfectcube/Html5Easy/blob/master/README.md"));
+        startActivity(openURL);
     }
 }
